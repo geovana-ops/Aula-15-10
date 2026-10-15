@@ -1,0 +1,522 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto acadêmico sobre testes de Back-End, documentação, automação e qualidade de software.">
+    <title>Testes de Back-End | Qualidade de Software</title>
+    <link rel="stylesheet" href="TesteBackEnd.css">
+</head>
+
+<body>
+
+    <header class="cabecalho" id="inicio">
+        <div class="container topo">
+            <a href="#inicio" class="logo">
+                <span class="logo-icone">&lt;/&gt;</span>
+                TestLab<span class="ponto">.</span>
+            </a>
+
+            <nav aria-label="Menu principal">
+                <ul class="menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#documentos">Documentos</a></li>
+                    <li><a href="#casos">Casos de teste</a></li>
+                    <li><a href="#execucao">Execução</a></li>
+                    <li><a href="#monitoramento">Monitoramento</a></li>
+                    <li><a href="#resultados">Resultados</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- APRESENTAÇÃO -->
+        <section class="hero">
+            <div class="container hero-conteudo">
+                <div class="hero-texto">
+                    <span class="etiqueta">TECNOLOGIA • QA • AUTOMAÇÃO</span>
+                    <h1>Testes de Back-End e <span>Qualidade de Software</span></h1>
+
+                    <p>
+                        Conheça os processos, documentos e ferramentas utilizados
+                        para verificar o funcionamento de sistemas, identificar
+                        falhas e garantir mais segurança e confiabilidade.
+                    </p>
+
+                    <div class="botoes">
+                        <a href="#documentos" class="botao principal">Explorar conteúdo</a>
+                        <a href="#casos" class="botao secundario">Ver exemplo prático</a>
+                    </div>
+
+                    <div class="numeros">
+                        <div><strong>04</strong><span>Documentos de teste</span></div>
+                        <div><strong>06</strong><span>Etapas de qualidade</span></div>
+                        <div><strong>QA</strong><span>Garantia da qualidade</span></div>
+                    </div>
+                </div>
+
+                <div class="hero-imagem">
+                    <img
+                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=85"
+                        alt="Painel tecnológico com gráficos e análise de dados">
+                    <div class="imagem-legenda">
+                        <span class="status"></span>
+                        Qualidade em cada etapa do sistema
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTRODUÇÃO -->
+        <section class="secao introducao">
+            <div class="container">
+                <span class="etiqueta">ENTENDA O CONCEITO</span>
+                <h2>O que são testes de Back-End?</h2>
+                <p class="texto-centro">
+                    Os testes de Back-End verificam a parte interna de uma aplicação,
+                    incluindo regras de negócio, APIs, banco de dados, autenticação
+                    e processamento das informações. O objetivo é descobrir erros
+                    antes que eles afetem os usuários.
+                </p>
+
+                <div class="grade tres-colunas">
+                    <article class="cartao conceito">
+                        <div class="icone">⚙️</div>
+                        <h3>Lógica do sistema</h3>
+                        <p>Verifica se as regras e operações funcionam corretamente.</p>
+                    </article>
+
+                    <article class="cartao conceito">
+                        <div class="icone">🗄️</div>
+                        <h3>Banco de dados</h3>
+                        <p>Confere gravação, consulta, atualização e exclusão de dados.</p>
+                    </article>
+
+                    <article class="cartao conceito">
+                        <div class="icone">🔐</div>
+                        <h3>Segurança</h3>
+                        <p>Ajuda a identificar falhas de acesso e proteção das informações.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- A - DOCUMENTOS DE TESTES -->
+        <section class="secao secao-escura" id="documentos">
+            <div class="container">
+                <span class="etiqueta">TÓPICO A</span>
+                <h2>Documentos de Testes</h2>
+                <p class="subtitulo">
+                    A documentação organiza o planejamento, registra as verificações
+                    realizadas e facilita a comunicação dos resultados.
+                </p>
+
+                <div class="grade dois-colunas">
+                    <article class="cartao documento">
+                        <span class="numero-card">01</span>
+                        <div class="icone">📋</div>
+                        <h3>Plano de teste</h3>
+                        <p>
+                            Documento que define o que será testado, os objetivos,
+                            os recursos necessários, os responsáveis, os prazos,
+                            os riscos e os critérios de aprovação.
+                        </p>
+                        <h4>Exemplo</h4>
+                        <p class="exemplo">
+                            Planejar os testes de uma API de cadastro de usuários,
+                            incluindo validação de e-mail, senha e duplicidade.
+                        </p>
+                    </article>
+
+                    <article class="cartao documento">
+                        <span class="numero-card">02</span>
+                        <div class="icone">🧪</div>
+                        <h3>Casos de teste</h3>
+                        <p>
+                            Descrevem as condições iniciais, os dados utilizados,
+                            as etapas de execução e os resultados esperados para
+                            verificar uma funcionalidade.
+                        </p>
+                        <h4>Exemplo</h4>
+                        <p class="exemplo">
+                            Enviar uma requisição com dados válidos e verificar
+                            se o sistema cadastra o usuário corretamente.
+                        </p>
+                    </article>
+
+                    <article class="cartao documento">
+                        <span class="numero-card">03</span>
+                        <div class="icone">🚨</div>
+                        <h3>Relatório de Incidentes de Testes</h3>
+                        <p>
+                            Registra problemas encontrados durante os testes,
+                            com descrição, gravidade, evidências, ambiente
+                            e informações para reproduzir o erro.
+                        </p>
+                        <h4>Exemplo</h4>
+                        <p class="exemplo">
+                            A API aceita dois usuários com o mesmo e-mail,
+                            contrariando a regra definida para o cadastro.
+                        </p>
+                    </article>
+
+                    <article class="cartao documento">
+                        <span class="numero-card">04</span>
+                        <div class="icone">📊</div>
+                        <h3>Relatório de Resumo de Teste</h3>
+                        <p>
+                            Apresenta uma visão geral dos testes realizados,
+                            a quantidade aprovada ou reprovada, os incidentes
+                            encontrados e a situação da qualidade.
+                        </p>
+                        <h4>Exemplo</h4>
+                        <p class="exemplo">
+                            Foram executados 20 testes: 17 aprovados e 3 reprovados.
+                            Os resultados indicam que ainda existem falhas a corrigir.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- B - CASOS DE TESTE -->
+        <section class="secao" id="casos">
+            <div class="container">
+                <span class="etiqueta">TÓPICO B</span>
+                <h2>Elaboração do Caso de Teste</h2>
+
+                <div class="conteudo-lateral">
+                    <div>
+                        <h3>Conceito</h3>
+                        <p>
+                            Elaborar um caso de teste significa descrever de forma
+                            organizada como uma funcionalidade será verificada.
+                            Ele deve indicar o que testar, quais dados utilizar,
+                            quais passos executar e qual resultado esperar.
+                        </p>
+
+                        <h3>Principais elementos</h3>
+                        <ul class="lista">
+                            <li>Identificação do caso de teste.</li>
+                            <li>Descrição e objetivo.</li>
+                            <li>Pré-requisitos e dados de entrada.</li>
+                            <li>Passos para execução.</li>
+                            <li>Resultado esperado e resultado obtido.</li>
+                            <li>Status: aprovado, reprovado ou bloqueado.</li>
+                        </ul>
+                    </div>
+
+                    <figure class="imagem-lateral">
+                        <img
+                            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85"
+                            alt="Profissional trabalhando com tecnologia em um computador">
+                        <figcaption>
+                            Um caso de teste bem elaborado facilita a repetição
+                            e a análise dos testes.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="exemplo-caso">
+                    <div class="exemplo-topo">
+                        <span class="etiqueta">EXEMPLO PRÁTICO</span>
+                        <span class="badge-status">Caso CT-001</span>
+                    </div>
+
+                    <h3>Teste de cadastro de usuário em uma API</h3>
+
+                    <p><strong>Objetivo:</strong> verificar se a API cadastra corretamente um usuário com dados válidos.</p>
+                    <p><strong>Pré-requisito:</strong> API disponível e ambiente de teste configurado.</p>
+                    <p><strong>Dados de entrada:</strong> nome, e-mail exclusivo, senha e perfil permitido.</p>
+
+                    <h4>Etapas de execução</h4>
+                    <ol class="passos">
+                        <li>Enviar uma requisição HTTP POST para o endpoint de cadastro.</li>
+                        <li>Informar os dados válidos no corpo da requisição.</li>
+                        <li>Executar a solicitação usando uma ferramenta como Postman.</li>
+                        <li>Verificar o código HTTP e o conteúdo da resposta.</li>
+                        <li>Confirmar se o registro foi criado conforme as regras do sistema.</li>
+                    </ol>
+
+                    <div class="resultado-grid">
+                        <div>
+                            <strong>Resultado esperado</strong>
+                            <p>Cadastro realizado, resposta adequada e dados armazenados corretamente.</p>
+                        </div>
+                        <div>
+                            <strong>Critério de aprovação</strong>
+                            <p>Todos os resultados observados correspondem aos resultados esperados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- C - EXECUÇÃO -->
+        <section class="secao secao-clara" id="execucao">
+            <div class="container">
+                <span class="etiqueta">TÓPICO C</span>
+                <h2>Execução do Programa</h2>
+                <p class="subtitulo">
+                    A execução consiste em realizar os testes planejados e comparar
+                    o comportamento real do sistema com o resultado esperado.
+                </p>
+
+                <div class="grade tres-colunas">
+                    <article class="cartao">
+                        <div class="icone">▶️</div>
+                        <h3>1. Preparar</h3>
+                        <p>Configurar o ambiente, os dados e as ferramentas necessárias.</p>
+                    </article>
+
+                    <article class="cartao">
+                        <div class="icone">💻</div>
+                        <h3>2. Executar</h3>
+                        <p>Realizar os passos manualmente ou por meio de testes automatizados.</p>
+                    </article>
+
+                    <article class="cartao">
+                        <div class="icone">✔️</div>
+                        <h3>3. Registrar</h3>
+                        <p>Guardar evidências, respostas, logs e o status de cada teste.</p>
+                    </article>
+                </div>
+
+                <div class="dica">
+                    <strong>Importante:</strong>
+                    testes devem ser executados preferencialmente em um ambiente
+                    controlado, sem comprometer dados reais ou serviços de produção.
+                </div>
+            </div>
+        </section>
+
+        <!-- D - MONITORAMENTO -->
+        <section class="secao" id="monitoramento">
+            <div class="container">
+                <span class="etiqueta">TÓPICO D</span>
+                <h2>Monitoramento e Controle</h2>
+
+                <div class="conteudo-lateral">
+                    <div>
+                        <p>
+                            O monitoramento acompanha o andamento dos testes,
+                            enquanto o controle permite corrigir desvios, priorizar
+                            problemas e ajustar o planejamento quando necessário.
+                        </p>
+
+                        <ul class="lista">
+                            <li>Acompanhar testes concluídos e pendentes.</li>
+                            <li>Monitorar erros, logs e consumo de recursos.</li>
+                            <li>Verificar prazos e metas estabelecidas.</li>
+                            <li>Priorizar incidentes conforme o impacto.</li>
+                            <li>Reexecutar testes após as correções.</li>
+                        </ul>
+                    </div>
+
+                    <div class="painel-monitoramento">
+                        <div class="painel-cabecalho">
+                            <span>PAINEL DE TESTES</span>
+                            <span class="status-texto">● Demonstração</span>
+                        </div>
+
+                        <div class="metrica">
+                            <div><span>Testes aprovados</span><strong>85%</strong></div>
+                            <div class="barra"><span style="width:85%"></span></div>
+                        </div>
+
+                        <div class="metrica">
+                            <div><span>Testes reprovados</span><strong>10%</strong></div>
+                            <div class="barra vermelha"><span style="width:10%"></span></div>
+                        </div>
+
+                        <div class="metrica">
+                            <div><span>Testes bloqueados</span><strong>5%</strong></div>
+                            <div class="barra amarela"><span style="width:5%"></span></div>
+                        </div>
+
+                        <p class="observacao">
+                            Valores fictícios usados apenas para ilustrar um painel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- E - RESULTADOS -->
+        <section class="secao secao-escura" id="resultados">
+            <div class="container">
+                <span class="etiqueta">TÓPICO E</span>
+                <h2>Avaliação de Resultados</h2>
+                <p class="subtitulo">
+                    Depois da execução, os resultados são analisados para verificar
+                    se os requisitos foram atendidos e se existem falhas que precisam
+                    ser corrigidas.
+                </p>
+
+                <div class="grade tres-colunas">
+                    <article class="cartao resultado-card">
+                        <div class="icone">📈</div>
+                        <h3>Análise dos dados</h3>
+                        <p>Comparar os resultados reais com os critérios definidos no planejamento.</p>
+                    </article>
+
+                    <article class="cartao resultado-card">
+                        <div class="icone">🔍</div>
+                        <h3>Identificação de falhas</h3>
+                        <p>Investigar erros, suas causas e os impactos para os usuários.</p>
+                    </article>
+
+                    <article class="cartao resultado-card">
+                        <div class="icone">🎯</div>
+                        <h3>Decisão final</h3>
+                        <p>Recomendar correções, novos testes ou liberação conforme os critérios de qualidade.</p>
+                    </article>
+                </div>
+
+                <div class="conclusao">
+                    <h3>Por que avaliar os resultados?</h3>
+                    <p>
+                        A avaliação ajuda a reduzir riscos, aumentar a confiabilidade,
+                        melhorar o desempenho e fornecer informações para decisões
+                        sobre a qualidade do software.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- F - EQUIPE -->
+        <section class="secao" id="equipe">
+            <div class="container">
+                <span class="etiqueta">TÓPICO F</span>
+                <h2>Comunicação com a Equipe de Automação de Testes</h2>
+
+                <div class="conteudo-lateral">
+                    <div>
+                        <p>
+                            A comunicação entre profissionais de QA, desenvolvedores
+                            e especialistas em automação é essencial para compartilhar
+                            informações, corrigir falhas e manter os testes confiáveis.
+                        </p>
+
+                        <h3>Boas práticas de comunicação</h3>
+                        <ul class="lista">
+                            <li>Descrever os erros de forma clara e objetiva.</li>
+                            <li>Compartilhar logs, capturas de tela e evidências.</li>
+                            <li>Informar os passos necessários para reproduzir a falha.</li>
+                            <li>Definir prioridades e responsáveis pelas correções.</li>
+                            <li>Comunicar alterações nos requisitos e nos sistemas.</li>
+                            <li>Revisar e compartilhar os resultados após a correção.</li>
+                        </ul>
+                    </div>
+
+                    <figure class="imagem-lateral">
+                        <img
+                            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=85"
+                            alt="Equipe de profissionais colaborando em um projeto">
+                        <figcaption>
+                            A colaboração entre QA, desenvolvimento e automação
+                            melhora a qualidade do produto.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="comunicacao">
+                    <h3>Exemplo de comunicação de incidente</h3>
+                    <p><strong>Assunto:</strong> Falha no teste automatizado de cadastro</p>
+                    <p><strong>Descrição:</strong> A API retornou erro ao tentar cadastrar um usuário com dados válidos.</p>
+                    <p><strong>Evidência:</strong> Resposta HTTP, horário da execução e trecho relevante do log.</p>
+                    <p><strong>Ação solicitada:</strong> Investigar a causa, corrigir o problema e avisar a equipe para repetir os testes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FERRAMENTAS -->
+        <section class="secao secao-clara" id="ferramentas">
+            <div class="container">
+                <span class="etiqueta">RECURSOS DE QA</span>
+                <h2>Ferramentas utilizadas em testes</h2>
+
+                <div class="grade tres-colunas">
+                    <article class="cartao ferramenta">
+                        <div class="icone">📬</div>
+                        <h3>Postman</h3>
+                        <p>Envio de requisições e verificação de APIs.</p>
+                        <a href="https://www.postman.com/" target="_blank" rel="noopener noreferrer">Conhecer ferramenta ↗</a>
+                    </article>
+
+                    <article class="cartao ferramenta">
+                        <div class="icone">🤖</div>
+                        <h3>Selenium</h3>
+                        <p>Automação de testes de aplicações web no navegador.</p>
+                        <a href="https://www.selenium.dev/" target="_blank" rel="noopener noreferrer">Conhecer ferramenta ↗</a>
+                    </article>
+
+                    <article class="cartao ferramenta">
+                        <div class="icone">📊</div>
+                        <h3>JMeter</h3>
+                        <p>Testes de desempenho e comportamento sob carga.</p>
+                        <a href="https://jmeter.apache.org/" target="_blank" rel="noopener noreferrer">Conhecer ferramenta ↗</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- VÍDEO -->
+        <section class="secao" id="video">
+            <div class="container video-container">
+                <span class="etiqueta">APRENDA MAIS</span>
+                <h2>Vídeo sobre testes de software</h2>
+                <p class="subtitulo">
+                    Consulte vídeos e demonstrações sobre testes de software,
+                    APIs e automação.
+                </p>
+
+                <a class="botao principal"
+                   href="https://www.youtube.com/results?search_query=testes+de+software+back-end+e+automacao"
+                   target="_blank" rel="noopener noreferrer">
+                    ▶ Assistir vídeos sobre o tema
+                </a>
+
+                <p class="observacao">
+                    O botão abre uma pesquisa de vídeos no YouTube. Você também
+                    pode adicionar um vídeo baixado legalmente à pasta do projeto
+                    e incorporá-lo usando a tag HTML <code>&lt;video&gt;</code>.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONCLUSÃO -->
+        <section class="secao conclusao-final">
+            <div class="container">
+                <span class="etiqueta">CONCLUSÃO</span>
+                <h2>Qualidade não acontece por acaso.</h2>
+                <p>
+                    O planejamento, a elaboração dos casos de teste, a execução,
+                    o monitoramento, a avaliação dos resultados e a comunicação
+                    entre as equipes são etapas importantes para desenvolver
+                    sistemas mais seguros, estáveis e confiáveis.
+                </p>
+                <a href="#inicio" class="botao principal">Voltar ao início ↑</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <a href="#inicio" class="logo">
+                <span class="logo-icone">&lt;/&gt;</span>
+                TestLab<span class="ponto">.</span>
+            </a>
+
+            <p>Projeto acadêmico • Testes de Back-End e Qualidade de Software</p>
+            <p class="copyright">© 2026 — Desenvolvido para fins educacionais.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
